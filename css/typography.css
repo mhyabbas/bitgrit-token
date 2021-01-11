@@ -1,0 +1,116 @@
+body {
+    font-family: 'Avenir LT Std';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    color: #924CCC;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h3.small {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p.lead {
+    font-size: 1.2rem;
+}
+
+a {
+    color: #924CCC;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+img.center {
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0;
+}
+
+figure.small {
+    max-width: 500px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    padding: 5px 20px;
+}
+
+th {
+    color: #924CCC;
+    font-weight: normal;
+}
+
+.table--border {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table--border, .table--border td {
+    border: 2px solid #924CCC;
+}
+
+.table--border td:nth-child(odd) {
+    border-right: 2px solid transparent;
+}
+
+.table--border td:nth-child(even) {
+    border-left: 2px solid transparent;
+}
+
+@media all and (min-width: 1200px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,17 @@
+.header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	height: 100%;
+	background-color: #11091FF2;
+/*	background-image: url('../../assets/header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;*/
+	text-align: center;
+}
