@@ -2,9 +2,12 @@
 @import url('typography.css');
 @import url('layout.css');
 @import url('utility.css');
+@import url('plugins/slick.css');
 @import url('components/buttons.css');
 @import url('components/header.css');
 @import url('components/navigation.css');
 @import url('components/card.css');
 @import url('components/media.css');
+@import url('components/carousel.css');
+@import url('components/form.css');
 @import url('components/footer.css');

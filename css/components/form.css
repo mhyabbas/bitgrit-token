@@ -1,0 +1,114 @@
+.form__row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.form input, .form textarea {
+	margin-bottom: 20px;
+	padding: 20px 20px 15px;
+	width: 100%;
+	border: 1px solid #777777;
+	border-radius: 5px;
+	font-family: 'Avenir LT Std', sans-serif;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.form textarea {
+	height: 130px;
+}
+
+.form ::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
+
+.form ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
+
+.form :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
+
+.form ::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
+
+.form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black;
+	opacity: 1; /* Firefox */
+}
+
+.form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: black;
+}
+
+.form ::-ms-input-placeholder { /* Microsoft Edge */
+	color: black;
+}
+
+.form .btn {
+	margin-bottom: 20px;
+	padding: 18px 40px 13px;
+	border-radius: 0;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.form .btn:focus {
+	outline: none;
+}
+
+.form .g-recaptcha > div {
+	margin: 0 auto;
+}
+
+@media all and (min-width: 1200px) {
+	.form__row {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.form__column {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 48.5%;
+		flex: 0 0 48.5%;
+	}
+
+	.form__group {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.form textarea {
+		height: 100%;
+	}
+}

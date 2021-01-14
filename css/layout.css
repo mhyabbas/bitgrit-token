@@ -31,7 +31,7 @@ section {
     padding-right: 30px;
 }
 
-.double-column {
+.column--double {
     margin-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -59,7 +59,7 @@ section {
         flex: 1;
     }
 
-    .double-column {
+    .column--double {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         -webkit-box-flex: 2;

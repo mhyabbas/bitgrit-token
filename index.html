@@ -17,16 +17,27 @@
 
         <link rel="stylesheet" href="css/main.css" type="text/css">
 
+        <!-- Google reCAPTCHA -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
     </head>
     <body>
         <!-- SVG symbols -->
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow Left</title>
+                <path d="M8.3,12l6,6l1.4-1.4L11.1,12l4.6-4.6L14.3,6L8.3,12z"/>
+            </symbol>
+            <symbol id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow Right</title>
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+            </symbol>
             <symbol id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <title>Close</title>
                 <path d="M0 0h24v24H0z" fill="none"/>
                 <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
             </symbol>
-
             <symbol id="icon-toggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <title>Toggle</title>
                 <path d="M0 0h24v24H0z" fill="none"/>
@@ -264,9 +275,92 @@
             </div>
         </section>
 
-        <section class="bg-purple-3">
-            <div class="container text-center">
-                <h2 class="text-white">Roadmap</h2>
+        <section class="bg-purple-2">
+            <div class="carousel-wrapper">
+                <div class="row">
+                    <div class="column text-center">
+                        <h2 class="text-white">Roadmap</h2>
+                    </div>
+                </div>
+                <div class="row carousel carousel--roadmap">
+                    <div class="column">
+                        <span class="carousel--roadmap-number">1</span>
+                        <h3 class="text-white">2021 Q1</h3>
+                        <div class="carousel--roadmap-body text-white text-left">
+                            <ol>
+                                <li>Launch of GR token</li>
+                                <li>Support teams on competition platform to facilitate a collaborative ecosystem</li>
+                                <li>Develop collaboration computation contracts to measure relative contribution of members in development of AI models within a team.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <span class="carousel--roadmap-number">2</span>
+                        <h3 class="text-white">2021 Q2</h3>
+                        <div class="carousel--roadmap-body text-white text-left">
+                            <ol>
+                                <li>Launch collaboration computation contracts on the competition platform</li>
+                                <li>Introduce a token-centric incentive model for partners</li>
+                                <li>Open a bug bounty and open source contribution program</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <span class="carousel--roadmap-number">3</span>
+                        <h3 class="text-white">2021 Q3</h3>
+                        <div class="carousel--roadmap-body text-white text-left">
+                            <ol>
+                                <li>Introduction of blockchain-backed certification, recognition and rewards</li>
+                                <li>Host events with tokenomic incentives for participation</li>
+                                <li>Introduce custodial token wallets on the bitgrit platform</li>
+                                <li>Test migration of AI competitions to a token-centric platform (PoC)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <span class="carousel--roadmap-number">4</span>
+                        <h3 class="text-white">2021 Q4</h3>
+                        <div class="carousel--roadmap-body text-white text-left">
+                            <ol>
+                                <li>Complete migration from fiat-based to token-based business model</li>
+                                <li>Integrate our job board with the token ecosystem</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <span class="carousel--roadmap-number">5</span>
+                        <h3 class="text-white">2022 Q1</h3>
+                        <div class="carousel--roadmap-body text-white text-left">
+                            <ol>
+                                <li>Introduction of a token-curated registry (TCR)</li>
+                                <li>Partner with other crypto projects with token interchangeability options</li>
+                                <li>Beta release of the AI Marketplace</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <span class="carousel--roadmap-number">6</span>
+                        <h3 class="text-white">2022 Q2</h3>
+                        <div class="carousel--roadmap-body text-white text-left">
+                            <ol>
+                                <li>Beta release of bitgrit v2.0: A P2P multi-blockchain ecosystem equipped with staking options on the TCR</li>
+                                <li>Full release of the AI Marketplace</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <span class="carousel--roadmap-number">7</span>
+                        <h3 class="text-white">2022 Q3</h3>
+                        <div class="carousel--roadmap-body text-white text-left">
+                            <ol>
+                                <li>Launch developer tools and API communication with the bitgrit mainnet</li>
+                                <li>Additional cryptocurrency pairs for GR introduced</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <svg id="roadmap-previous" class="previous carousel__arrow carousel__arrow--white"><use xlink:href="#icon-arrow-left"/></svg>
+                <svg id="roadmap-next" class="next carousel__arrow carousel__arrow--white"><use xlink:href="#icon-arrow-right"/></svg>
             </div>
         </section>
 
@@ -297,7 +391,95 @@
                         <p class="mt0 mb0">Students at top universities around the globe represent the bitgrit community – in India, Malaysia, Nigeria and beyond. With fresh perspectives and invaluable support for events and promotions, Campus Ambassadors form a cornerstone of our community. Join the program!</p>
                         <div class="text-right">
                             <a href="" target="_blank">Learn more ></a>
-                        </div>                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container carousel-wrapper">
+                <div class="row">
+                    <div class="column text-center">
+                        <h2>Partners</h2>
+                    </div>
+                </div>
+                <div class="row carousel carousel--partners">
+                    <div class="column">
+                        <a href="https://www.rsm.global/uae/" target="_blank" rel="noopener"><img src="assets/logo rsm.png" alt="partner"></a>
+                    </div>
+                    <div class="column">
+                        <a href="https://www.murc.jp/" target="_blank" rel="noopener"><img src="assets/logo mufg.png" alt="partner"></a>
+                    </div>
+                    <div class="column">
+                        <a href="https://datagateway.co.jp/" target="_blank" rel="noopener"><img src="assets/logo dg.png" alt="partner"></a>
+                    </div>
+                    <div class="column">
+                        <a href="https://www.matrix.io/" target="_blank" rel="noopener"><img src="assets/logo matrix.png" alt="partner"></a>
+                    </div>
+                    <div class="column">
+                        <a href="http://www.ncspl.net/" target="_blank" rel="noopener"><img src="assets/logo netsoft.png" alt="partner"></a>
+                    </div>
+                </div>
+                <svg id="partners-previous" class="previous carousel__arrow"><use xlink:href="#icon-arrow-left"/></svg>
+                <svg id="partners-next" class="next carousel__arrow"><use xlink:href="#icon-arrow-right"/></svg>
+            </div>
+        </section>
+
+        <section class="bg-purple-2">
+            <div class="carousel-wrapper">
+                <div class="row">
+                    <div class="column text-center">
+                        <h2 class="text-white">Photo Gallery</h2>
+                    </div>
+                </div>
+                <div class="row carousel carousel--gallery">
+                    <div class="column">
+                        <img src="assets/gallery1.png" alt="gallery">
+                    </div>
+                    <div class="column">
+                        <img src="assets/gallery2.png" alt="gallery">
+                    </div>
+                    <div class="column">
+                        <img src="assets/gallery3.png" alt="gallery">
+                    </div>
+                    <div class="column">
+                        <img src="assets/gallery4.jpeg" alt="gallery">
+                    </div>
+                </div>
+                <svg id="gallery-previous" class="previous carousel__arrow carousel__arrow--white"><use xlink:href="#icon-arrow-left"/></svg>
+                <svg id="gallery-next" class="next carousel__arrow carousel__arrow--white"><use xlink:href="#icon-arrow-right"/></svg>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <h2 class="mt0">Get In Touch</h2>
+                        <p>Need help or have any queries? Feel free to contact us, we will get back to you within 24h.</p>
+                    </div>
+                    <div class="column--double">
+                        <form class="form" action="" method="post">
+                            <div class="form__row">
+                                <div class="form__column">
+                                    <div class="form__group">
+                                        <input type="text" placeholder="Full Name" id="name" name="name" required>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="email" placeholder="Email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form__column">
+                                    <div class="form__group">
+                                        <textarea placeholder="Message" id="message" name="message" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="btn" type="submit" value="Send Message">
+                            <div class="g-recaptcha" data-sitekey="6Le_YsQZAAAAAGImoQYnkZjyf-Yqskzstfxpx-c0"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -346,8 +528,11 @@
             </div>
         </footer>
 
+        <script src="javascript/lib/jquery-3.2.1.min.js"></script>
         <script src="javascript/lib/highcharts.js"></script>
+        <script src="javascript/plugins/slick.min.js"></script>
         <script src="javascript/components/navigation.js"></script>
+        <script src="javascript/components/carousel.js"></script>
         <script src="javascript/components/charts.js"></script>
 
     </body>

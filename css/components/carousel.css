@@ -1,0 +1,95 @@
+.carousel-wrapper {
+    text-align: center;
+}
+
+.carousel {
+    margin: 0 auto 20px;
+}
+
+.carousel .column {
+    margin: 10px;
+    padding: 0;
+}
+
+.carousel .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.carousel .slick-slide {
+    outline: 0;
+}
+
+.carousel .slick-slide img {
+    margin: 0 auto;
+}
+
+.carousel__arrow {
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    fill: #924CCC;
+    cursor: pointer;
+}
+
+/*Modifier - Gallery*/
+.carousel--gallery .column {
+    margin: 0;
+}
+
+.carousel--gallery .slick-slide img {
+    width: 100%;
+}
+
+/*Modifier - Roadmap*/
+.carousel--roadmap .column {
+    position: relative;
+    margin: 35px 0 0;
+    padding: 30px 30px 0;
+    border-top: 2px solid #924CCC;
+}
+
+.carousel--roadmap .slick-track {
+    align-items: flex-start;
+}
+
+.carousel--roadmap-number {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: -18px;
+    padding-top: 5px;
+    width: 36px;
+    height: 36px;
+    background-color: #924CCC;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    transform: translateX(-50%);
+}
+
+.carousel--roadmap .column.slick-current .carousel--roadmap-number {
+    top: -35px;
+    width: 70px;
+    height: 70px;
+}
+
+.carousel--roadmap-body {
+    padding: 20px;
+    border: 1px solid #924CCC;
+}
+
+.carousel--roadmap .column.slick-current .carousel--roadmap-body {
+    border-width: 4px;
+}
+
+/*Modifier - Arrow*/
+.carousel__arrow--white {
+    fill: white;
+}
