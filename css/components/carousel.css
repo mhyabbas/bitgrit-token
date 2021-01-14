@@ -36,15 +36,6 @@
     cursor: pointer;
 }
 
-/*Modifier - Gallery*/
-.carousel--gallery .column {
-    margin: 0;
-}
-
-.carousel--gallery .slick-slide img {
-    width: 100%;
-}
-
 /*Modifier - Roadmap*/
 .carousel--roadmap .column {
     position: relative;
@@ -87,6 +78,67 @@
 
 .carousel--roadmap .column.slick-current .carousel--roadmap-body {
     border-width: 4px;
+}
+
+/*Modifier - Team*/
+.carousel--team-img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+.carousel--team-name {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.carousel--team-title {
+    margin-top: 0;
+    height: 45px;
+    font-size: 14px;
+}
+
+/*Modifier - Advisors*/
+.carousel--advisors-img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+.carousel--advisors-name {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.carousel--advisors-title {
+    margin-top: 0;
+    height: 45px;
+    font-size: 14px;
+}
+
+/*Modifier - Blog*/
+.carousel--blog .column {
+    margin: 0;
+    padding: 100px 30px;
+}
+
+.carousel--blog .slick-track {
+    display: flex;
+    align-items: stretch;
+}
+
+.carousel--blog .slick-slide {
+    height: inherit;
+}
+
+.carousel--blog h3 {
+    font-size: 20px;
+    color: white;
+}
+
+/*Modifier - Gallery*/
+.carousel--gallery .column {
+    margin: 0;
+}
+
+.carousel--gallery .slick-slide img {
+    width: 100%;
 }
 
 /*Modifier - Arrow*/

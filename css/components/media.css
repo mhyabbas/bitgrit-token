@@ -6,14 +6,13 @@
 
 .media__icon {
 	display: block;
-	flex-basis: 60px;
-	margin-right: 20px;
+	flex: 1 0 100px;
+	margin-right: 15px;
 }
 
-.media__icon svg {
-	width: 60px;
-	height: 60px;
-	fill: #924CCC;
+.media__icon img {
+	width: 85px;
+	height: auto;
 }
 
 .media__body h3 {
