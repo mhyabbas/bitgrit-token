@@ -67,6 +67,10 @@ figure.small {
     max-width: 500px;
 }
 
+.table-wrapper {
+    overflow-x: auto;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -81,7 +85,6 @@ th {
 }
 
 .table--border {
-    table-layout: fixed;
     width: 100%;
 }
 
