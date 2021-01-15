@@ -30,6 +30,8 @@
 }
 
 .footer__social {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-top: 20px;
 }

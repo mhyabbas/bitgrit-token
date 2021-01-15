@@ -45,14 +45,22 @@
 }
 
 .carousel--roadmap .slick-track {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .carousel--roadmap-number {
     position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     left: 50%;
     top: -18px;
     padding-top: 5px;
@@ -62,7 +70,9 @@
     border-radius: 50%;
     color: white;
     font-size: 20px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .carousel--roadmap .column.slick-current .carousel--roadmap-number {
@@ -119,8 +129,12 @@
 }
 
 .carousel--blog .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
 }
 
 .carousel--blog .slick-slide {
