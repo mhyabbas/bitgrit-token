@@ -1,3 +1,4 @@
+// Toggle button
 var toggle = document.querySelector(".nav__toggle");
 var nav = document.querySelector(".nav__list");
 
@@ -17,3 +18,29 @@ function toggleNav(e) {
 }
 
 toggle.addEventListener("click", toggleNav, false);
+
+// Nav item click: close nav
+function closeNav() {
+    nav.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<svg><use xlink:href='#icon-toggle'/></svg>"; 
+}
+
+document.querySelectorAll('.nav__link').forEach(function(e) {
+    e.addEventListener('click', closeNav);
+});
+
+// Logo click: close nav
+document.querySelector('.nav__logo a').addEventListener('click', closeNav);
+
+// Scroll down: update background colour
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        nav.classList.add("scroll");
+    } else {
+        nav.classList.remove("scroll");
+    }
+}

@@ -24,8 +24,8 @@
 	height: 100%;
 }
 
-.nav__list.active {
-	background-color: #4D3381;
+.nav__list.scroll {
+	background-color: #11091FF2;
 }
 
 .nav__logo {
@@ -54,7 +54,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	background-color: #4D3381;
+	background-color: #11091FF2;
 }
 
 .nav__link {
@@ -108,10 +108,6 @@
 		-ms-flex-pack: justify;
 		justify-content: space-between;
 		width: 100%;
-	}
-
-	.nav__list.active {
-		background-color: inherit;
 	}
 
 	.nav__item {
