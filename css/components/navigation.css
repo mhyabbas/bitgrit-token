@@ -24,7 +24,7 @@
 	height: 100%;
 }
 
-.nav__list.scroll {
+.nav__list.active, .nav__list.scroll {
 	background-color: #11091FF2;
 }
 
@@ -108,6 +108,14 @@
 		-ms-flex-pack: justify;
 		justify-content: space-between;
 		width: 100%;
+	}
+
+	.nav__list.active {
+		background-color: inherit;
+	}
+
+	.nav__list.scroll {
+		background-color: #11091FF2;
 	}
 
 	.nav__item {
