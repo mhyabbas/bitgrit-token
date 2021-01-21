@@ -16,6 +16,7 @@
 	color: white;
 	text-align: center;
 	text-decoration: none;
+	text-transform: capitalize;
 	outline: none;
 }
 

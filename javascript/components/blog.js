@@ -54,13 +54,13 @@ $(document).ready(function() {
            output += `
            <div class="column" style="background-image: linear-gradient(rgba(46,28,82,0.6),rgba(46,28,82,0.6))">
            <h3>${item.title}</h3>
-           <a class="btn" href="${item.link}" target="_blank" rel="noopener">Apply Now</a>
+           <a class="btn" href="${item.link}" target="_blank" rel="noopener">Read More</a>
            </div>`
          } else  {
            output += `
            <div class="column" style="background-image: linear-gradient(rgba(46,28,82,0.6),rgba(46,28,82,0.6)), url(${item.thumbnail}); background-position: center center; background-size: contain; background-repeat: no-repeat;">
            <h3>${item.title}</h3>
-           <a class="btn" href="${item.link}" target="_blank" rel="noopener">Apply Now</a>
+           <a class="btn" href="${item.link}" target="_blank" rel="noopener">Read More</a>
            </div>`
          }
 
