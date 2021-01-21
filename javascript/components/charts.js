@@ -72,10 +72,11 @@ Highcharts.chart('chart-distribution', {
 Highcharts.chart('chart-release', {
     chart: {
         type: 'area',
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        marginRight: 25
     },
     colors: [
-    '#e8ecef', '#d8dde2', '#b2bbc6', '#efe9f4', '#924ccd', '#70399f', '#5a2f8a', '#2a0e4f' , '#090811'
+    '#EFE9F4', '#E2D7EC', '#C5AFD9', '#A988C5', '#8C60B2', '#6F389F', '#5A2E8A', '#462B6F' , '#382457'
     ],
     title: {
         text: null

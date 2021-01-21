@@ -141,9 +141,14 @@
     height: inherit;
 }
 
+.carousel--blog .thumbnail {
+    margin-bottom: 25px;
+    height: 200px;
+    background: url(../../assets/placeholder.png) center center/cover no-repeat;
+}
+
 .carousel--blog h3 {
     font-size: 20px;
-    color: white;
 }
 
 /*Modifier - Gallery*/

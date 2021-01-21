@@ -52,13 +52,15 @@ $(document).ready(function() {
           const img = item.thumbnail.slice(0,18);
           if(img == 'https://medium.com') {
            output += `
-           <div class="column" style="background-image: linear-gradient(rgba(46,28,82,0.6),rgba(46,28,82,0.6))">
+           <div class="column" style="background-color: white;">
+           <div class="thumbnail"></div>
            <h3>${item.title}</h3>
            <a class="btn" href="${item.link}" target="_blank" rel="noopener">Read More</a>
            </div>`
          } else  {
            output += `
-           <div class="column" style="background-image: linear-gradient(rgba(46,28,82,0.6),rgba(46,28,82,0.6)), url(${item.thumbnail}); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+           <div class="column" style="background-color: white;">
+           <div class="thumbnail" style="background: url(${item.thumbnail}) center center/contain no-repeat;"></div>
            <h3>${item.title}</h3>
            <a class="btn" href="${item.link}" target="_blank" rel="noopener">Read More</a>
            </div>`
