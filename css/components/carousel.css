@@ -91,6 +91,10 @@
 }
 
 /*Modifier - Team*/
+.carousel--team .column {
+    margin: 20px 0;
+}
+
 .carousel--team-img {
     max-width: 150px;
     border-radius: 50%;

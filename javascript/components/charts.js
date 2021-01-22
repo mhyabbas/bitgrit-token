@@ -1,6 +1,7 @@
 Highcharts.chart('chart-distribution', {
     chart: {
         type: 'pie',
+        marginRight: 10
     },
     colors: [
     '#924CCC', '#efe9f4', '#2a0e4f', '#5a2f8a', '#d8dde2', '#70399f', '#b2bbc6', '#565a5e', '#090811'

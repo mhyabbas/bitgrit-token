@@ -26,40 +26,41 @@ $(document).ready(function() {
 
   // Team
   $('.carousel--team').slick({
+    rows: 2,
+    slidesPerRow: 5,
     prevArrow: "#team-previous",
     nextArrow: "#team-next",
     speed: 300,
-    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 4
+        slidesPerRow: 4,
       }
     },
     {
       breakpoint: 1000,
       settings: {
-        slidesToShow: 3
+        slidesPerRow: 3,
       }
     },
     {
       breakpoint: 800,
       settings: {
-        slidesToShow: 2
+        slidesPerRow: 2,
       }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 1
+        slidesPerRow: 1,
       }
     }
     ]
   });
 
-  // Team
+  // Advisors
   $('.carousel--advisors').slick({
     prevArrow: "#advisors-previous",
     nextArrow: "#advisors-next",
