@@ -72,7 +72,7 @@ table {
 }
 
 table, th, td {
-    padding: 5px 20px;
+    padding: 8px 20px 5px;
 }
 
 th {
@@ -82,25 +82,22 @@ th {
 
 .table--border {
     width: 100%;
+    border: 2px solid #924CCC;
     white-space: nowrap;
+}
+
+.table--border tr:first-of-type th {
+    border-bottom: 2px solid #11091F;
+}
+
+.table--border tr:first-of-type td {
+    border-bottom: 2px solid #924CCC;
 }
 
 .table--border th {
     background-color: #924CCC;
     color: white;
     text-align: left;
-}
-
-.table--border, .table--border td {
-    border: 2px solid #924CCC;
-}
-
-.table--border td:nth-child(odd) {
-    border-right: 2px solid transparent;
-}
-
-.table--border td:nth-child(even) {
-    border-left: 2px solid transparent;
 }
 
 @media all and (min-width: 1200px) {
