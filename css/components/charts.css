@@ -1,0 +1,39 @@
+#chart-distribution .highcharts-data-labels {
+	left: 0 !important;
+	top: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#chart-distribution .highcharts-data-label {
+	visibility: visible !important;
+}
+
+#chart-distribution .highcharts-data-label-color-8 {
+	left: 42% !important;
+}
+
+#chart-distribution .highcharts-data-label-color-7 {
+	left: 31% !important;
+	top: 7% !important;
+}
+
+#chart-distribution .highcharts-data-label-color-6 {
+	left: 18% !important;
+	top: 12% !important;
+}
+
+#chart-distribution .highcharts-data-label-color-5 {
+	left: 13% !important;
+	top: 24% !important;
+}
+
+#chart-distribution .highcharts-data-label-color-4 {
+	left: 9% !important;
+	top: 36% !important;
+}
+
+#chart-distribution .highcharts-data-label-color-3 {
+	left: 8% !important;
+	top: 52% !important;
+}

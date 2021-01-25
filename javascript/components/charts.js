@@ -22,8 +22,8 @@ Highcharts.chart('chart-distribution', {
                     textOverflow: 'clip',
                 },
                 formatter: function() {
-                    return '<span style="display: inline-block; font-size: 14px; width: 100%; text-align: center;">' + this.y +
-                    '%</span><br><span style="display: inline-block; margin-bottom: 12px; font-size: 10px; font-weight: normal; width: 100%; text-align: center;">' + this.point.name + '</span>';
+                    return '<span style="white-space: normal; display: inline-block; font-size: 14px; width: 100%; text-align: center;">' + this.y +
+                    '%</span><br><span style="white-space: normal; display: inline-block; margin-bottom: 12px; font-size: 10px; font-weight: normal; width: 100%; text-align: center;">' + this.point.name + '</span>';
                 },
                 useHTML: true
             },
