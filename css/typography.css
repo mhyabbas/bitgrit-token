@@ -46,6 +46,11 @@ a:hover {
     text-decoration: none;
 }
 
+ul, ol {
+    padding-left: 20px;
+    margin-left: 0;
+}
+
 img {
     display: block;
     max-width: 100%;
