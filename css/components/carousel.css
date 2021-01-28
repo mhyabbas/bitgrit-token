@@ -127,11 +127,6 @@
 }
 
 /*Modifier - Blog*/
-.carousel--blog .column {
-    margin: 0;
-    padding: 100px 30px;
-}
-
 .carousel--blog .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -143,17 +138,6 @@
 
 .carousel--blog .slick-slide {
     height: inherit;
-}
-
-.carousel--blog .thumbnail {
-    margin-bottom: 25px;
-    height: 200px;
-    background: url(../../assets/placeholder.png) center center/cover no-repeat;
-}
-
-.carousel--blog h3 {
-    color: #4D3381;
-    font-size: 20px;
 }
 
 /*Modifier - Gallery*/

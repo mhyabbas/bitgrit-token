@@ -52,17 +52,25 @@ $(document).ready(function() {
           const img = item.thumbnail.slice(0,18);
           if(img == 'https://medium.com') {
            output += `
-           <div class="column" style="background-color: white;">
-           <div class="thumbnail"></div>
+           <div class="card card--blog">
+           <div class="card__header"></div>
+           <div class="card__body">
            <h3>${item.title}</h3>
+           </div>
+           <div class="card__footer">
            <a class="btn" href="${item.link}" target="_blank" rel="noopener">Read More</a>
+           </div>
            </div>`
          } else  {
            output += `
-           <div class="column" style="background-color: white;">
-           <div class="thumbnail" style="background: url(${item.thumbnail}) center center/contain no-repeat;"></div>
+           <div class="card card--blog">
+           <div class="card__header" style="background: url(${item.thumbnail}) center center/contain no-repeat;"></div>
+           <div class="card__body">
            <h3>${item.title}</h3>
+           </div>
+           <div class="card__footer">
            <a class="btn" href="${item.link}" target="_blank" rel="noopener">Read More</a>
+           </div>
            </div>`
          }
 
