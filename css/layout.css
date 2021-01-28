@@ -38,6 +38,13 @@ section {
     padding-right: 30px;
 }
 
+.anchor {
+    position: relative;
+    display: block;
+    top: -80px;
+    visibility: hidden;
+}
+
 @media all and (min-width: 1200px) {
     .container {
         width: 1150px;
