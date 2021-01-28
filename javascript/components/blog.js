@@ -58,7 +58,7 @@ $(document).ready(function() {
            <h3>${item.title}</h3>
            </div>
            <div class="card__footer">
-           <a class="btn" href="${item.link}" target="_blank" rel="noopener">Read More</a>
+           <a class="btn" href="${item.link}" target="_blank" rel="noopener" aria-label="blog item">Read More</a>
            </div>
            </div>`
          } else  {
@@ -69,7 +69,7 @@ $(document).ready(function() {
            <h3>${item.title}</h3>
            </div>
            <div class="card__footer">
-           <a class="btn" href="${item.link}" target="_blank" rel="noopener">Read More</a>
+           <a class="btn" href="${item.link}" target="_blank" rel="noopener" aria-label="blog item">Read More</a>
            </div>
            </div>`
          }
