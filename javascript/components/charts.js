@@ -43,7 +43,7 @@ Highcharts.chart('chart-distribution', {
             name: 'Reserve Pool',
             y: 30,
         }, {
-            name: 'Ecosystsem Reserve',
+            name: 'Ecosystem Reserve',
             y: 20
         }, {
             name: 'Team',
@@ -52,7 +52,7 @@ Highcharts.chart('chart-distribution', {
             name: 'Data Science Community',
             y: 10
         }, {
-            name: 'Partners Pool',
+            name: "Partner's Pool",
             y: 6
         }, {
             name: 'Private Sale',
