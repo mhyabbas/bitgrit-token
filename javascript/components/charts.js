@@ -168,7 +168,7 @@ Highcharts.chart('chart-release', {
         name: 'Data Science Community',
         data: [1, 3.5, 6, 10]
     },{
-        name: 'Partners Pool',
+        name: "Partner's Pool",
         data: [0.6, 2.1, 3.6, 6]
     },{
         name: 'Community Events',
