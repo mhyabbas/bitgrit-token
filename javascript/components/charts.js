@@ -72,7 +72,7 @@ Highcharts.chart('chart-distribution', {
 
 Highcharts.chart('chart-release', {
     chart: {
-        type: 'area',
+        type: 'column',
         backgroundColor: 'transparent',
         marginRight: 25
     },
@@ -86,8 +86,7 @@ Highcharts.chart('chart-release', {
         text: null
     },
     xAxis: {
-        categories: ['0', '1 year', '2 years', '3 years'],
-        tickmarkPlacement: 'on',
+        categories: ['0', '0.5 year', '1 year', '1.5 years', '2 years', '2.5 years', '3 years'],
         title: {
             enabled: false
         },
@@ -95,9 +94,7 @@ Highcharts.chart('chart-release', {
             style: {
                 color: 'white'
             },
-        },
-        lineWidth: 0,
-        showFirstLabel: false,
+        }
     },
     yAxis: {
         title: {
@@ -122,11 +119,27 @@ Highcharts.chart('chart-release', {
     },
     plotOptions: {
         series: {
-            pointPlacement: 'on'
+            enableMouseTracking: false,
+            events: {
+                legendItemClick: function () {
+                    return false;
+                }
+            }
         },
-        area: {
+        column: {
             stacking: 'normal',
             lineWidth: 0,
+            marker: {
+                enabled: false,
+                states:{
+                    hover:{
+                        enabled:false
+                    }
+                }
+            }
+        },
+        line: {
+            stacking: 'normal',
             marker: {
                 enabled: false,
                 states:{
@@ -143,7 +156,8 @@ Highcharts.chart('chart-release', {
         symbolRadius: 0,
         itemStyle: {
             color: 'white',
-            fontWeight: 'normal'
+            fontWeight: 'normal',
+            'cursor': 'default'
         },
         itemHoverStyle: 'white',
         itemDistance: 60,
@@ -151,30 +165,84 @@ Highcharts.chart('chart-release', {
     },
     series: [{
         name: 'Private Sale',
-        data: [0.5067, 2.0267, 3.5467, 5.0667]
+        type: 'line',
+        showInLegend: false,
+        data: [0.5067, 1.2667, 2.0267, 2.7867, 3.5467, 4.3067, 5.0667]
     },{
         name: 'Advisors',
-        data: [0, 1.48, 2.96, 4.9333]
+        type: 'line',
+        showInLegend: false,
+        data: [0, 0.4933, 1.48, 1.9733, 2.96, 3.9467, 4.9333]
     },{
         name: 'Team',
-        data: [0, 3.2, 9.6, 16]
+        type: 'line',
+        showInLegend: false,
+        data: [0, 1.6, 3.2, 6.4, 9.6, 12.8, 16]
     },{
         name: 'Reserve Pool',
-        data: [3, 10.5, 18, 30]
+        type: 'line',
+        showInLegend: false,
+        data: [3, 6, 10.5, 13.5, 18, 24, 30]
     },{
         name: 'Ecosystem Reserve',
-        data: [2, 7, 12, 20]
+        type: 'line',
+        showInLegend: false,
+        data: [2, 4, 7, 9, 12, 16, 20]
     },{
         name: 'Data Science Community',
-        data: [1, 3.5, 6, 10]
+        type: 'line',
+        showInLegend: false,
+        data: [1, 2, 3.5, 4.5, 6, 8, 10]
     },{
         name: "Partner's Pool",
-        data: [0.6, 2.1, 3.6, 6]
+        type: 'line',
+        showInLegend: false,
+        data: [0.6, 1.2, 2.1, 2.7, 3.6, 4.8, 6]
     },{
         name: 'Community Events',
-        data: [0.5, 1.75, 3, 5]
+        type: 'line',
+        showInLegend: false,
+        data: [0.5, 1, 1.75, 2.25, 3, 4, 5]
     },{
         name: 'Bounty',
-        data: [0.3, 1.05, 1.8, 3]
+        type: 'line',
+        showInLegend: false,
+        data: [0.3, 0.6, 1.05, 1.35, 1.8, 2.4, 3]
+    },{
+        name: 'Private Sale',
+        type: 'column',
+        data: [0.5067, 1.2667, 2.0267, 2.7867, 3.5467, 4.3067, 5.0667]
+    },{
+        name: 'Advisors',
+        type: 'column',
+        data: [0, 0.4933, 1.48, 1.9733, 2.96, 3.9467, 4.9333]
+    },{
+        name: 'Team',
+        type: 'column',
+        data: [0, 1.6, 3.2, 6.4, 9.6, 12.8, 16]
+    },{
+        name: 'Reserve Pool',
+        type: 'column',
+        data: [3, 6, 10.5, 13.5, 18, 24, 30]
+    },{
+        name: 'Ecosystem Reserve',
+        type: 'column',
+        data: [2, 4, 7, 9, 12, 16, 20]
+    },{
+        name: 'Data Science Community',
+        type: 'column',
+        data: [1, 2, 3.5, 4.5, 6, 8, 10]
+    },{
+        name: "Partner's Pool",
+        type: 'column',
+        data: [0.6, 1.2, 2.1, 2.7, 3.6, 4.8, 6]
+    },{
+        name: 'Community Events',
+        type: 'column',
+        data: [0.5, 1, 1.75, 2.25, 3, 4, 5]
+    },{
+        name: 'Bounty',
+        type: 'column',
+        data: [0.3, 0.6, 1.05, 1.35, 1.8, 2.4, 3]
     }]
 });
