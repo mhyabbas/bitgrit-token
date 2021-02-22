@@ -121,7 +121,23 @@ Highcharts.chart('chart-release', {
         series: {
             enableMouseTracking: false,
             events: {
-                legendItemClick: function () {
+                legendItemClick: function(event) {
+                    if (!this.visible)
+                        return false;
+
+                    var seriesIndex = this.index;
+                    var series = this.chart.series;
+
+                    for (var i = 0; i < series.length; i++)
+                    {
+                        if (series[i].index != seriesIndex)
+                        {
+                            series[i].visible ?
+                            series[i].setVisible(false, false) :
+                            series[i].setVisible(true, false);
+                        } 
+                    }
+                    this.chart.redraw();
                     return false;
                 }
             }
@@ -157,7 +173,7 @@ Highcharts.chart('chart-release', {
         itemStyle: {
             color: 'white',
             fontWeight: 'normal',
-            'cursor': 'default'
+            // 'cursor': 'default'
         },
         itemHoverStyle: 'white',
         itemDistance: 60,
